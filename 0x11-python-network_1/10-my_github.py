@@ -13,3 +13,4 @@ if __name__ == "__main__":
     password = sys.argv[2]
     r = get(url, auth=auth.HTTPBasicAuth(user, password))
     print(r.json().get('id'))
+    
